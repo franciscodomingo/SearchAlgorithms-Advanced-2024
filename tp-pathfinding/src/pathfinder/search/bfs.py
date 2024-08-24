@@ -36,7 +36,6 @@ class BreadthFirstSearch:
             # el orden correcto es el que está acá
             if frontier.is_empty():
                 return NoSolution(explored)
-            import pdb;pdb.set_trace()
             node = frontier.remove()
             actions = grid.get_neighbours(node.state)
             list_actions = list(actions.keys())
